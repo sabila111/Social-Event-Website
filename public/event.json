@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "image": "https://i.ibb.co/x1w0PcV/0-Palm-Beach-Wedding-Captured-Beauty-Photography.jpg",
+      "price": 19.99,
+      "short_description": "Elegant celebrations to cherish forever. Let us make your wedding dreams come true.",
+      "description": " We specialize in turning your wedding dreams into reality. Our expert team handles every aspect of your special day, from finding the perfect venue to crafting exquisite decor, ensuring delicious cuisine, and meticulous planning. Trust us to make your wedding day stress-free and magical, so you can savor every moment of your love story."
+    },
+    {
+      "id": 2,
+      "name": "Engagement Parties",
+      "image": "https://i.ibb.co/QpkRqjZ/istockphoto-1187919612-612x612.jpg",
+      "price": 29.99,
+      "short_description":"Mark the beginning of a beautiful journey together. Start with a memorable engagement party.",
+      "description":"Let us set the stage for your unforgettable engagement celebration. From intimate gatherings to grand affairs, we create the perfect atmosphere to mark this special milestone in your life. Our team designs stunning decor, curates delicious menus, and ensures seamless planning, so you can cherish this moment with your loved ones. Let's make your engagement party a joyous prelude to your love story."
+    },
+    {
+      "id": 3,
+      "name": "Anniversaries",
+      "image": "https://i.ibb.co/rQPtsSh/1621077469-large.jpg",
+      "price": 39.99,
+      "short_description":"Celebrate love and commitment. We'll create an anniversary to remember.",
+      "description":" We specialize in crafting meaningful anniversary celebrations. Whether it's your first or fiftieth, we'll create a memorable event to honor your love story. From romantic venues to personalized touches, exquisite cuisine, and flawless coordination, we ensure your anniversary is a heartfelt and cherished occasion. Let us help you celebrate the enduring love that's brought you this far."
+    },
+    {
+      "id": 4,
+      "name": "Birthday Parties",
+      "image": "https://i.ibb.co/M1zg7BL/360-F-209367193-0-JS1hi-GJc28-QUQx-HLt-Pme-A1-Mh-Pnb0-A2r.jpg",
+      "price": 49.99,
+      "short_description": "Joyful gatherings for another year of life. Make your birthday unforgettable with us.",
+      "description":"Make your next birthday unforgettable with us. We specialize in creating remarkable birthday celebrations tailored to your style and preferences. Our team handles everything from venue selection to thematic decor, delectable menus, and seamless coordination. Let us turn your birthday into a truly special and memorable event, allowing you to focus on making cherished memories with loved ones."
+    },
+    {
+      "id": 5,
+      "name": "Retirement Parties",
+      "image": "https://i.ibb.co/DMFdtvL/depositphotos-33799889-stock-photo-man-giving-speech-at-retirement.webp",
+      "price": 59.99,
+      "short_description": "Honor a well-deserved retirement and new adventures. We'll make it special.",
+      "description":"Say farewell to the working years and hello to a golden retirement . We specialize in crafting retirement parties that celebrate your achievements and set the stage for a vibrant new chapter. From choosing the perfect venue to creating a meaningful atmosphere, delightful cuisine, and meticulous organization, we ensure your retirement party is a memorable and joyous occasion. Let us help you embark on this exciting journey of relaxation and new adventures."
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower",
+      "image": "https://i.ibb.co/WtHh3tP/pexels-paola-vasquez-3593437.jpg",
+      "price": 69.99,
+      "short_description":  "Celebrate the upcoming arrival of a new bundle of joy. Let's shower the parents-to-be with love.",
+      "description":" We specialize in creating heartwarming baby showers that celebrate the joy of new life. Whether it's your first child or a growing family, we'll design a beautiful event tailored to your preferences. From charming venues to adorable decor, delightful treats, and smooth coordination, we ensure your baby shower is a cherished and stress-free occasion. Let us help you welcome this precious addition to your family with love and laughter."
+    }
+  ]
+  
