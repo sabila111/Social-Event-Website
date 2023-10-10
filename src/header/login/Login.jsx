@@ -1,14 +1,16 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
-const {signIn} = useContext(AuthContext)
+    const { signIn } = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
 
-const [Error, setError] = useState('')
+    const [Error, setError] = useState('')
 
     const handleLogin = e => {
         e.preventDefault()
@@ -18,14 +20,15 @@ const [Error, setError] = useState('')
         const password = form.get('password')
         console.log(form)
         signIn(email, password)
-        .then (result =>{
-            console.log(result.user)
-        })
-        .catch (error => {
-            console.error(error)
-          
-            toast.error('Please enter correct info')
-        })
+            .then(result => {
+                console.log(result.user)
+                navigate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                console.error(error)
+
+                toast.error('Please enter correct info')
+            })
     }
 
     return (
@@ -51,8 +54,8 @@ const [Error, setError] = useState('')
             </form>
 
             {
-        Error && <p className='text-red-500 text-center'>{Error}</p>
-      }
+                Error && <p className='text-red-500 text-center'>{Error}</p>
+            }
             <p className="text-center mt-4">Do not have an account? Please <Link className="text-pink-400 font-bold" to={'/register'}>Register</Link></p>
 
             <ToastContainer />

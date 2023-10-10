@@ -23,7 +23,10 @@ const Home = () => {
             </div>
 
             <div className="">
-                     <p className="text-3xl text-center mt-10">What We <span className="text-pink-400 font-bold ">Provide</span> </p>
+                     <p className="text-2xl text-center mt-12">Our Best Team </p>
+                     <br />
+                     <p className="text-pink-400 font-bold text-3xl  text-center">Our Team of Professionals</p>
+
             </div>
 
             <Footer></Footer>

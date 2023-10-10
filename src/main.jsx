@@ -14,6 +14,7 @@ import Detail from './details/Detail.jsx';
 import Login from './header/login/Login.jsx';
 import Register from './header/register/Register.jsx';
 import AuthProvider from './provider/AuthProvider.jsx';
+import PrivateRoute from './privaeteRpute/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/detail/:id",
-        element: <Detail></Detail>,
+        element: <PrivateRoute><Detail></Detail></PrivateRoute>,
         loader: () => fetch('/event.json')
       },
       {
