@@ -52,7 +52,7 @@ const Home = () => {
 
             </div> */}
 
-            <div className="w-full h-80" style={{ backgroundImage: 'url(https://i.ibb.co/yFSrhkn/thumbnail.jpg)' }}>
+            <div className="w-full h-80 mt-10" style={{ backgroundImage: 'url(https://i.ibb.co/yFSrhkn/thumbnail.jpg)' }}>
 
             </div>
 
