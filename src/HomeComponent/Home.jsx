@@ -1,33 +1,32 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../banner/Banner";
 import Footer from "../footer/Footer";
+import EventCard from "./eventCard/EventCard";
 
 const Home = () => {
 
-const event = useLoaderData();
-console.log(event)
+    const event = useLoaderData();
+    console.log(event)
 
     return (
         <div>
             <div className="max-w-[1300px] mx-auto my-5">
-            <Banner></Banner>
-        </div>
+                <Banner></Banner>
+            </div>
 
-        <p className="text-3xl text-center text-pink-400 font-bold">Our Services</p>
+            <p className="text-3xl text-center text-pink-400 font-bold mt-24">Our Services</p>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 ">
+                {
+                    event.map(events => <EventCard key={events.id} event={events}></EventCard>)
+                }
+            </div>
 
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+            <div className="">
+                     <p className="text-3xl text-center mt-10">What We <span className="text-pink-400 font-bold ">Provide</span> </p>
+            </div>
 
-        <Footer></Footer>
+            <Footer></Footer>
         </div>
     );
 };

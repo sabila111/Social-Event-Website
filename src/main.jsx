@@ -10,6 +10,10 @@ import {
 import Root from './layout/Root.jsx';
 import Home from './HomeComponent/Home.jsx';
 import ErrorPage from './ErrorPage/ErrorPage.jsx';
+import Detail from './details/Detail.jsx';
+import Login from './header/login/Login.jsx';
+import Register from './header/register/Register.jsx';
+import AuthProvider from './provider/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,14 +24,30 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('event.json')
+        loader: () => fetch('/event.json')
       },
+      {
+        path: "/detail/:id",
+        element: <Detail></Detail>,
+        loader: () => fetch('/event.json')
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
